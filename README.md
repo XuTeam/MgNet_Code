@@ -57,11 +57,11 @@ For more detials about MgNet, we refer to the following two papers. If you also 
 
 ### Contact
 
-jhe at utexas.edu
+jhe AT utexas.edu
 
-xu at math.psu.edu
+xu AT math.psu.edu
 
-luz244 at psu.edu
+zhanglian AT multigrid.org
 
 **Jianqing's email**
 
