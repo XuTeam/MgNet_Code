@@ -23,6 +23,12 @@ These hyper-parameters are defined as follows.
 
 Here we mention that we always use <img src="https://latex.codecogs.com/gif.latex?A^{\ell}" title="A^{\ell}" />, which only depends on grids. For example, the following notation <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" title="{\rm MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" /> denotes a MgNet model which adopts 4 different grids (feature resolutions), 2 smoothing iterations on each grid, 256 channels for both feature tensor <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}" title="u^{\ell,i}" /> and data tensor <img src="https://latex.codecogs.com/gif.latex?f^{\ell}" title="f^{\ell}" />, and smoothing iteration <img src="https://latex.codecogs.com/gif.latex?B^{\ell}" title="B^{\ell}" />. 
 
+### Results on CIFAR and ImageNet
+
+#### **Jianqing, please add Table 4 in linear model paper here.** 
+
+
+
 
 
 ### Citation
@@ -49,3 +55,14 @@ For more detials about MgNet, we refer to the following two papers. If you also 
 }
 ```
 
+### Contact
+
+jhe at utexas.edu
+
+**Lian's email**
+
+xu at math.psu.edu
+
+**Jianqing's email**
+
+Any discussions, comments, suggestions and questions are welcome!
