@@ -59,10 +59,11 @@ For more detials about MgNet, we refer to the following two papers. If you also 
 
 jhe at utexas.edu
 
-**Lian's email**
-
 xu at math.psu.edu
+
+luz244 at psu.edu
 
 **Jianqing's email**
 
 Any discussions, comments, suggestions and questions are welcome!
+
