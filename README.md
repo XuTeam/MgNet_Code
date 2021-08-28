@@ -13,19 +13,21 @@ MgNet is a unified model that simultaneously recovers some convolutional neural 
 
 For simplicity, we use the following notation to represent different MgNet models with different hyper-parameters: 
 
-${\rm MgNet}[\nu_1,\cdots,\nu_J]\text{-}[(c_{u,1}, c_{f,1}), \cdots, (c_{u,J}, c_{f,J})]\text{-}B^{\ell,i}.$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex={\rm&space;MgNet}[\nu_1,\cdots,\nu_J]\text{-}[(c_{u,1},&space;c_{f,1}),&space;\cdots,&space;(c_{u,J},&space;c_{f,J})]\text{-}B^{\ell,i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[\nu_1,\cdots,\nu_J]\text{-}[(c_{u,1},&space;c_{f,1}),&space;\cdots,&space;(c_{u,J},&space;c_{f,J})]\text{-}B^{\ell,i}" title="{\rm MgNet}[\nu_1,\cdots,\nu_J]\text{-}[(c_{u,1}, c_{f,1}), \cdots, (c_{u,J}, c_{f,J})]\text{-}B^{\ell,i}" /></a>
 
 These hyper-parameters are defined as follows. 
 
-1. $[\nu_1,\cdots,\nu_J]$: The number of smoothing iterations on each grid. For example, $[2,2,2,2]$ means that there are 4 grids, and the number of iterations of each grid is 2.
-2. $[(c_{u,1}, c_{f,1}), \cdots, (c_{u,J}, c_{f,J})]$: The number of channels for $u^{\ell,i}$ and $f^\ell$ on each grid. We mainly consider the case $c_{u,\ell} = c_{f,\ell}$, which suggests us the following simplification notation $[c_{1}, \cdots, c_{J}]$, or even $[c]$ if we further take $c_{1}=c_2=\cdots=c_{J}$. For examples, ${\rm MgNet}[2,2,2,2]\text{-}[64,128,256,512]$ and ${\rm MgNet}[2,2,2,2]\text{-}[256]$.
-3. $B^{\ell,i}$: This means that we use different smoother $B^{\ell,i}$ in each smoothing iteration. Correspondingly, $B^{\ell}$ means that we share the smoother among each grid, which is $u^{\ell,i} = u^{\ell,i-1} + \sigma \circ B^{\ell} \ast \sigma\left({f^\ell -  A^{\ell} \ast u^{\ell,i-1}}\right).$ 
+1. <img src="https://latex.codecogs.com/gif.latex?[\nu_1,\cdots,\nu_J]" title="[\nu_1,\cdots,\nu_J]" />: The number of smoothing iterations on each grid. For example, [2,2,2,2] means that there are 4 grids, and the number of iterations of each grid is 2.
+2. <img src="https://latex.codecogs.com/gif.latex?[(c_{u,1},&space;c_{f,1}),&space;\cdots,&space;(c_{u,J},&space;c_{f,J})]" title="[(c_{u,1}, c_{f,1}), \cdots, (c_{u,J}, c_{f,J})]" />: The number of channels for <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}" title="u^{\ell,i}" /> and <img src="https://latex.codecogs.com/gif.latex?f^{\ell}" title="f^{\ell}" /> on each grid. We mainly consider the case <img src="https://latex.codecogs.com/gif.latex?c_{u,\ell}&space;=&space;c_{f,\ell}" title="c_{u,\ell} = c_{f,\ell}" />, which suggests us the following simplification notation <img src="https://latex.codecogs.com/gif.latex?[c_{1},&space;\cdots,&space;c_{J}]" title="[c_{1}, \cdots, c_{J}]" />, or even [c] if we further take <img src="https://latex.codecogs.com/gif.latex?c_{1}=c_2=\cdots=c_{J}" title="c_{1}=c_2=\cdots=c_{J}" />. For examples, <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[64,128,256,512]" title="{\rm MgNet}[2,2,2,2]\text{-}[64,128,256,512]" /> and <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[256]" title="{\rm MgNet}[2,2,2,2]\text{-}[256]" />.
+3. <img src="https://latex.codecogs.com/gif.latex?B^{\ell,i}" title="B^{\ell,i}" />: This means that we use different smoother <img src="https://latex.codecogs.com/gif.latex?B^{\ell,i}" title="B^{\ell,i}" /> in each smoothing iteration. Correspondingly, <img src="https://latex.codecogs.com/gif.latex?B^{\ell}" title="B^{\ell}" /> means that we share the smoother among each grid, which is <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}&space;=&space;u^{\ell,i-1}&space;&plus;&space;\sigma&space;\circ&space;B^{\ell}&space;\ast&space;\sigma\left({f^\ell&space;-&space;A^{\ell}&space;\ast&space;u^{\ell,i-1}}\right)." title="u^{\ell,i} = u^{\ell,i-1} + \sigma \circ B^{\ell} \ast \sigma\left({f^\ell - A^{\ell} \ast u^{\ell,i-1}}\right)." /> 
 
-Here we mention that we always use $A^{\ell}$, which only depends on grids. For example, the following notation ${\rm MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell},$ denotes a MgNet model which adopts 4 different grids (feature resolutions), 2 smoothing iterations on each grid, 256 channels for both feature tensor $u^{\ell,i}$ and data tensor $f^\ell$ as the smoothing iteration. 
+Here we mention that we always use <img src="https://latex.codecogs.com/gif.latex?A^{\ell}" title="A^{\ell}" />, which only depends on grids. For example, the following notation <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" title="{\rm MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" /> denotes a MgNet model which adopts 4 different grids (feature resolutions), 2 smoothing iterations on each grid, 256 channels for both feature tensor <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}" title="u^{\ell,i}" /> and data tensor <img src="https://latex.codecogs.com/gif.latex?f^{\ell}" title="f^{\ell}" />, and smoothing iteration <img src="https://latex.codecogs.com/gif.latex?B^{\ell}" title="B^{\ell}" />. 
+
+
 
 ### Citation
 
-If you find MgNet useful in your research, please consider citing:
+For more detials about MgNet, we refer to the following two papers. If you also find MgNet useful in your research, please consider citing:
 
 ```
 @article{he2019mgnet,
