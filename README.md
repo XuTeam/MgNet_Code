@@ -3,7 +3,6 @@ This repository contains the PyTorch implementation of MgNet.
 
 As an example, the following command trains a MgNet with  on CIFAR-100:
 
-`python ******************************(Jianqing, please add this.)`
 `python mgnet_train.py --wise-B --dataset cifar100`
 
 ### Introduction
