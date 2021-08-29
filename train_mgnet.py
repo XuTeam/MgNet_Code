@@ -212,4 +212,6 @@ if __name__ == "__main__":
     logger.info(str(args))
     trainloader,testloader,num_classes = load_data(args.path,args.minibatch_size,args.dataset)
     model = MgNet(args,num_classes=num_classes)
+    if use_cuda:
+        model =model.cuda()
     train_acc,test_max_acc,test_last_acc = train_process(model,save_name,args.num_epoch,args.lr,trainloader,testloader)
