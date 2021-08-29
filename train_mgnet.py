@@ -200,7 +200,7 @@ if __name__ == "__main__":
     parser.add_argument('--lr',type=float,default=0.1)
     parser.add_argument('--logger-name',type=str,default='./mgnet_test.log')
     
-    args = parser.parse_args(args=[])
+    args = parser.parse_args()
     
     args.num_ite = [int(i) for i in args.num_ite.split(',')]
     

@@ -1,9 +1,10 @@
 # MgNet: A Unified Framework of Multigrid and Convolutional Neural Network
 This repository contains the PyTorch implementation of MgNet. 
 
-As an example, the following command trains a MgNet with  on CIFAR-10:
+As an example, the following command trains a MgNet with  on CIFAR-100:
 
 `python ******************************(Jianqing, please add this.)`
+`python mgnet_train.py --wise-B --dataset cifar100`
 
 ### Introduction
 
@@ -26,6 +27,10 @@ Here we mention that we always use <img src="https://latex.codecogs.com/gif.late
 ### Results on CIFAR and ImageNet
 
 #### **Jianqing, please add Table 4 in linear model paper here.** 
+
+Model                    | Parameters | CIFAR-10 | CIFAR100
+-----                       | -----           | -----        |  ------
+MgNet[2,2,2,2],256,B^{l} |  8.3M          | 96.00       | 79.94
 
 
 
@@ -63,7 +68,7 @@ xu AT math.psu.edu
 
 zhanglian AT multigrid.org
 
-**Jianqing's email**
+jqzhu AT emails.bjut.edu.cn
 
 Any discussions, comments, suggestions and questions are welcome!
 
