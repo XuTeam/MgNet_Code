@@ -1,5 +1,5 @@
 # MgNet: A Unified Framework of Multigrid and Convolutional Neural Network
-This repository contains the PyTorch implementation of MgNet. 
+This repository contains the [PyTorch](https://pytorch.org/) (1.7.1) implementation of MgNet. 
 
 As an example, the following command trains a MgNet with  on CIFAR-100:
 
