@@ -3,7 +3,7 @@ This repository contains the [PyTorch](https://pytorch.org/) (1.7.1) implementat
 
 As an example, the following command trains a MgNet with  on CIFAR-100:
 
-`python mgnet_train.py --wise-B --dataset cifar100`
+`python train_mgnet.py --wise-B --dataset cifar100`
 
 ### Introduction
 
