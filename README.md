@@ -36,6 +36,9 @@ pre-act ResNet1001          |      10.2M   |     95.08     |     77.29
 WideResNet 28×2             |    36.5M    |     95.83     |      79.50                  
 MgNet[2,2,2,2]-256-B^{l}  |    8.2M      |  **96.00**  |    **79.94**     
 
+AlexNet, VGG result on CIFAR reported from [here](https://reposhub.com/python/deep-learning/bearpaw-pytorch-
+classification.html).
+
 
 Model                              | Parameters | ImageNet
 -----                                 | -----           | -----     
@@ -44,7 +47,9 @@ VGG19  	                         |    144.0M    |    74.50
 ResNet18                          |     11.2M   |     72.12          
 pre-act ResNet200          |      64.7M   |     78.34                           
 WideResNet 50×2             |    68.9M    |     78.10       
-MgNet[3,4,6,3]-[128,256,512,1024]-B^{l,i}  |    71.3M      |  **78.59**  
+MgNet[3,4,6,3]-[128,256,512,1024]-B^{l,i}  |    71.3M      |  **78.59** 
+
+
 
 
 
