@@ -49,7 +49,13 @@ WideResNet 50×2             |    68.9M    |     78.10
 MgNet[3,4,6,3]-[128,256,512,1024]-B^{l,i}  |    71.3M      |  **78.59** 
 
 
+This repository reported results introduced in the following paper
 
+[Imagenet classification with deep convolutional neural networks](https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+[Very deep convolutional networks for large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf)
+[Deep residual learning for image recognition](https://arxiv.org/abs/1512.03385)
+[Identity mappings in deep residual networks](https://arxiv.org/abs/1603.05027)
+[Wide residual networks](https://arxiv.org/abs/1605.07146)
 
 
 
