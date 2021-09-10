@@ -27,9 +27,16 @@ Here we mention that we always use <img src="https://latex.codecogs.com/gif.late
 
 #### **Jianqing, please add Table 4 in linear model paper here.** 
 
-Model                    | Parameters | CIFAR-10 | CIFAR100
------                       | -----           | -----        |  ------
-MgNet[2,2,2,2],256,B^{l} |  8.3M          | 96.00       | 79.94
+Model                              | Parameters | CIFAR-10 | CIFAR100
+-----                                 | -----           | -----        |  ------
+AlexNet                                 2.5M         76.22           43.87      
+VGG19  	                             20.0M        93.56          71.95                           
+ResNet18                               11.2M        95.28          77.54                    
+pre-act ResNet1001                10.2M        95.08          77.29                                      
+WideResNet 28×2                 36.5M         95.83           79.50                  
+MgNet[2,2,2,2]-256-B^{l}      8.2M        ** 96.00**      **79.94**     
+
+
 
 
 
