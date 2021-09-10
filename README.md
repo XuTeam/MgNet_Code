@@ -30,14 +30,21 @@ Here we mention that we always use <img src="https://latex.codecogs.com/gif.late
 Model                              | Parameters | CIFAR-10 | CIFAR100
 -----                                 | -----           | -----        |  ------
 AlexNet                            |     2.5M      |   76.22      |     43.87      
-VGG19  	                         |    20.0M    |    93.56      |    71.95                           
+VGG19  	                         |    20.0M    |    93.56      |    71.95        
 ResNet18                          |     11.2M   |     95.28     |     77.54                    
 pre-act ResNet1001          |      10.2M   |     95.08     |     77.29                                      
 WideResNet 28×2             |    36.5M    |     95.83     |      79.50                  
 MgNet[2,2,2,2]-256-B^{l}  |    8.2M      |  **96.00**  |    **79.94**     
 
 
-
+Model                              | Parameters | ImageNet
+-----                                 | -----           | -----     
+AlexNet                            |     60.2M      |   63.30    
+VGG19  	                         |    144.0M    |    74.50    
+ResNet18                          |     11.2M   |     72.12          
+pre-act ResNet200          |      64.7M   |     78.34                           
+WideResNet 50×2             |    68.9M    |     78.10       
+MgNet[3,4,6,3]-[128,256,512,1024]-B^{l,i}  |    71.3M      |  **78.59**  
 
 
 
