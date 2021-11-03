@@ -21,11 +21,9 @@ These hyper-parameters are defined as follows.
 2. <img src="https://latex.codecogs.com/gif.latex?[(c_{u,1},&space;c_{f,1}),&space;\cdots,&space;(c_{u,J},&space;c_{f,J})]" title="[(c_{u,1}, c_{f,1}), \cdots, (c_{u,J}, c_{f,J})]" />: The number of channels for <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}" title="u^{\ell,i}" /> and <img src="https://latex.codecogs.com/gif.latex?f^{\ell}" title="f^{\ell}" /> on each grid. We mainly consider the case <img src="https://latex.codecogs.com/gif.latex?c_{u,\ell}&space;=&space;c_{f,\ell}" title="c_{u,\ell} = c_{f,\ell}" />, which suggests us the following simplification notation <img src="https://latex.codecogs.com/gif.latex?[c_{1},&space;\cdots,&space;c_{J}]" title="[c_{1}, \cdots, c_{J}]" />, or even [c] if we further take <img src="https://latex.codecogs.com/gif.latex?c_{1}=c_2=\cdots=c_{J}" title="c_{1}=c_2=\cdots=c_{J}" />. For examples, <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[64,128,256,512]" title="{\rm MgNet}[2,2,2,2]\text{-}[64,128,256,512]" /> and <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[256]" title="{\rm MgNet}[2,2,2,2]\text{-}[256]" />.
 3. <img src="https://latex.codecogs.com/gif.latex?B^{\ell,i}" title="B^{\ell,i}" />: This means that we use different smoother <img src="https://latex.codecogs.com/gif.latex?B^{\ell,i}" title="B^{\ell,i}" /> in each smoothing iteration. Correspondingly, <img src="https://latex.codecogs.com/gif.latex?B^{\ell}" title="B^{\ell}" /> means that we share the smoother among each grid, which is <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}&space;=&space;u^{\ell,i-1}&space;&plus;&space;\sigma&space;\circ&space;B^{\ell}&space;\ast&space;\sigma\left({f^\ell&space;-&space;A^{\ell}&space;\ast&space;u^{\ell,i-1}}\right)." title="u^{\ell,i} = u^{\ell,i-1} + \sigma \circ B^{\ell} \ast \sigma\left({f^\ell - A^{\ell} \ast u^{\ell,i-1}}\right)." /> 
 
-Here we mention that we always use <img src="https://latex.codecogs.com/gif.latex?A^{\ell}" title="A^{\ell}" />, which only depends on grids. For example, the following notation <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" title="{\rm MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" /> denotes a MgNet model which adopts 4 different grids (feature resolutions), 2 smoothing iterations on each grid, 256 channels for both feature tensor <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}" title="u^{\ell,i}" /> and data tensor <img src="https://latex.codecogs.com/gif.latex?f^{\ell}" title="f^{\ell}" />, and smoothing iteration <img src="https://latex.codecogs.com/gif.latex?B^{\ell}" title="B^{\ell}" />. 
+Note that we always use <img src="https://latex.codecogs.com/gif.latex?A^{\ell}" title="A^{\ell}" />, which only depends on grids. For example, the following notation <img src="https://latex.codecogs.com/gif.latex?{\rm&space;MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" title="{\rm MgNet}[2,2,2,2]\text{-}[256]\text{-}B^{\ell}" /> denotes a MgNet model which adopts 4 different grids (feature resolutions), 2 smoothing iterations on each grid, 256 channels for both feature tensor <img src="https://latex.codecogs.com/gif.latex?u^{\ell,i}" title="u^{\ell,i}" /> and data tensor <img src="https://latex.codecogs.com/gif.latex?f^{\ell}" title="f^{\ell}" />, and smoothing iteration <img src="https://latex.codecogs.com/gif.latex?B^{\ell}" title="B^{\ell}" />. 
 
 ### Results on CIFAR and ImageNet
-
-#### **Jianqing, please add Table 4 in linear model paper here.** 
 
 Model                              | Parameters | CIFAR-10 | CIFAR100
 -----                                 | -----           | -----        |  ------
@@ -35,9 +33,6 @@ ResNet18                          |     11.2M   |     95.28     |     77.54
 pre-act ResNet1001          |      10.2M   |     95.08     |     77.29                                      
 WideResNet 28×2             |    36.5M    |     95.83     |      79.50                  
 MgNet[2,2,2,2]-256-B^{l}  |    8.2M      |  **96.00**  |    **79.94**     
-
-AlexNet, VGG result on CIFAR reported from [here](https://reposhub.com/python/deep-learning/bearpaw-pytorch-classification.html).
-
 
 Model                              | Parameters | ImageNet
 -----                                 | -----           | -----     
@@ -49,8 +44,9 @@ WideResNet 50×2             |    68.9M    |     78.10
 MgNet[3,4,6,3]-[128,256,512,1024]-B^{l,i}  |    71.3M      |  **78.59** 
 
 
-This repository reported results introduced in the following paper
+The results reported in the tables above are from in the following papers and webpages.
 
+(https://reposhub.com/python/deep-learning/bearpaw-pytorch-classification.html).
 [Imagenet classification with deep convolutional neural networks](https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)  
 [Very deep convolutional networks for large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf)  
 [Deep residual learning for image recognition](https://arxiv.org/abs/1512.03385)  
@@ -61,7 +57,7 @@ This repository reported results introduced in the following paper
 
 ### Citation
 
-For more detials about MgNet, we refer to the following two papers. If you also find MgNet useful in your research, please consider citing:
+For more detials about MgNet, we refer to the following two papers. If you find MgNet useful to your research or you use the code published here, please consider to cite:
 
 ```
 @article{he2019mgnet,
@@ -82,6 +78,12 @@ For more detials about MgNet, we refer to the following two papers. If you also 
   year={2019}
 }
 ```
+
+### License
+This software is free software distributed under the Lesser General Public License or LGPL, version 3.0 or any later versions. This software distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with FASP. If not, see http://www.gnu.org/licenses/.
+
 
 ### Contact
 
