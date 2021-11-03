@@ -1,11 +1,4 @@
 # MgNet: A Unified Framework of Multigrid and Convolutional Neural Network
-This repository contains the [PyTorch](https://pytorch.org/) (1.7.1) implementation of MgNet. 
-
-As an example, the following command trains a MgNet with  on CIFAR-100:
-
-`python train_mgnet.py --wise-B --dataset cifar100`
-
-### Introduction
 
 MgNet is a unified model that simultaneously recovers some convolutional neural networks (CNN) for image classification and multigrid (MG) methods for solving discretized partial differential equations (PDEs). Here is a diagram of its architecture.
 
@@ -53,6 +46,13 @@ The results reported in the tables above are from in the following papers and we
 [Identity mappings in deep residual networks](https://arxiv.org/abs/1603.05027)  
 [Wide residual networks](https://arxiv.org/abs/1605.07146)
 
+### Implementation
+
+This repository contains the [PyTorch](https://pytorch.org/) (1.7.1) implementation of MgNet. 
+
+As an example, the following command trains a MgNet with  on CIFAR-100:
+
+`python train_mgnet.py --wise-B --dataset cifar100`
 
 
 ### Citation
