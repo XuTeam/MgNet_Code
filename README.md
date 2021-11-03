@@ -88,6 +88,8 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 ### Contact
 
+Xu Team: http://multigrid.org/
+
 jhe AT utexas.edu
 
 xu AT math.psu.edu
