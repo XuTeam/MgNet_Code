@@ -2,7 +2,6 @@
 
 MgNet is a unified model that simultaneously recovers some convolutional neural networks (CNN) for image classification and multigrid (MG) methods for solving discretized partial differential equations (PDEs). Here is a diagram of its architecture.
 
-![MgNet](./figures/MgNet.png)
  <img src="./figures/MgNet.png" width = "300" align=center />
 
 
