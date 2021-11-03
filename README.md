@@ -89,15 +89,15 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 ### Contact
 
-Xu Team: http://multigrid.org/
+Jinchao Xu's research group: http://multigrid.org/
 
-jhe AT utexas.edu
+Juncai He: jhe AT utexas.edu
 
-xu AT math.psu.edu
+Jinchao Xu: xu AT math.psu.edu
 
-zhanglian AT multigrid.org
+Lian Zhang: zhanglian AT multigrid.org
 
-jqzhu AT emails.bjut.edu.cn
+Jianqing Zhu: jqzhu AT emails.bjut.edu.cn
 
 Any discussions, comments, suggestions and questions are welcome!
 
