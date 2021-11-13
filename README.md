@@ -74,9 +74,9 @@ For more detials about MgNet, we refer to the following two papers. If you find 
   year={2019},
   publisher={Springer}
 }
-
+```
 [Constrained Linear Data-feature Mapping for Image Classification](https://arxiv.org/pdf/1911.10428.pdf)
-'''
+```
 @article{he2019constrained,
   title={Constrained Linear Data-feature Mapping for Image Classification},
   author={He, Juncai and Chen, Yuyan and Zhang, Lian and Xu, Jinchao},
