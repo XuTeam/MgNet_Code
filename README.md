@@ -61,7 +61,7 @@ As an example, the following command trains a MgNet with  on CIFAR-100:
 
 For more detials about MgNet, we refer to the following two papers. If you find MgNet useful to your research or you use the code published here, please consider to cite:
 
-MgNet: A unified framework of multigrid and convolutional neural network(https://doi.org/10.1007/s11425-019-9547-2)
+[MgNet: A unified framework of multigrid and convolutional neural network](https://doi.org/10.1007/s11425-019-9547-2)
 
 ```
 @article{he2019mgnet,
@@ -74,6 +74,8 @@ MgNet: A unified framework of multigrid and convolutional neural network(https:/
   year={2019},
   publisher={Springer}
 }
+
+[Constrained Linear Data-feature Mapping for Image Classification](https://arxiv.org/pdf/1911.10428.pdf)
 '''
 @article{he2019constrained,
   title={Constrained Linear Data-feature Mapping for Image Classification},
