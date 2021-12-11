@@ -88,8 +88,6 @@ For more detials about MgNet, we refer to the following two papers. If you find 
 ### License
 This software is free software distributed under the Lesser General Public License or LGPL, version 3.0 or any later versions. This software distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public License along with FASP. If not, see http://www.gnu.org/licenses/.
-
 
 ### Contact
 
