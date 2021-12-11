@@ -1,3 +1,12 @@
+'''
+\file  train_mgnet.c 
+\brief Trai the MgNet model on Cifar100
+---------------------------------------------------------------------------------
+Copyright (C) 2021 by the Xu research group: http://multigrid.org/. All rights reserved.
+Released under the terms of the GNU Lesser General Public License 3.0 or later.
+---------------------------------------------------------------------------------
+ */
+ '''
 import torch
 import torch.nn as nn 
 import torch.optim as optim
@@ -9,7 +18,11 @@ import numpy as np
 import logging
 from mgnet import MgNet
 
+'''
+\fn get_logger(filename, verbosity=1, name=None)
 
+\brief This function . 
+'''
 def get_logger(filename, verbosity=1, name=None):
     level_dict = {0: logging.DEBUG, 1: logging.INFO, 2: logging.WARNING}
     formatter = logging.Formatter(
@@ -28,6 +41,11 @@ def get_logger(filename, verbosity=1, name=None):
 
     return logger
 
+'''
+\fn adjust_learning_rate(optimizer, epoch, init_lr)
+
+\brief This function adjust the learning rate during the training process.
+'''
 def adjust_learning_rate(optimizer, epoch, init_lr):
     #lr = 1.0 / (epoch + 1)
     lr = init_lr * 0.1 ** (epoch // 50)
