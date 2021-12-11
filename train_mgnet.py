@@ -1,5 +1,5 @@
 '''
-\file  train_mgnet.c 
+\file  train_mgnet.py
 \brief Trai the MgNet model on Cifar100
 ---------------------------------------------------------------------------------
 Copyright (C) 2021 by the Xu research group: http://multigrid.org/. All rights reserved.
